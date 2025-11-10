@@ -1,7 +1,11 @@
-﻿internal class Program
+﻿using System.Security.Cryptography;
+using Tyuiu.TikhomirovaKA.Sprint4.Task2.V1.Lib;
+
+internal class Program
 {
     private static void Main(string[] args)
-    {
+    { 
+        DataService ds = new DataService();
         Console.WriteLine("**************************************************************************");
         Console.WriteLine("* Спринт #4                                                              *");
         Console.WriteLine("* Тема: Обработка структурных типов                                      *");
@@ -11,13 +15,17 @@
         Console.WriteLine("**************************************************************************");
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                       *");
         Console.WriteLine("**************************************************************************");
-        int[] array = new int[10] { 9, 8, 7, 6, 5, 7, 3, 2, 7, 3 };
+        int[] array = new int[10];
+        for (int i = 0; i < array.Length; i++)
+        {
+            array[i] = RandomNumberGenerator.GetInt32(1, 9);
+        }
         Console.WriteLine(string.Join(", ", array));
 
         Console.WriteLine("**************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                             *");
         Console.WriteLine("**************************************************************************");
-        Console.WriteLine(ds.GetMultOddArrEl(array));
+        Console.WriteLine(ds.Calculate(array));
         Console.ReadKey();
     }
 }
