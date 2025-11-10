@@ -11,7 +11,7 @@ namespace Tyuiu.TikhomirovaKA.Sprint4.Task0.V15.Test
             DataService ds = new DataService();
 
             int[] array = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
-            int wait = 5;
+            int wait = 945;
             int res = ds.GetMultOddArrEl(array);
 
             Assert.AreEqual(wait, res);
