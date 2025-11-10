@@ -8,8 +8,8 @@ internal class Program
         Console.WriteLine("**************************************************************************");
         Console.WriteLine("* Спринт #4                                                              *");
         Console.WriteLine("* Тема: Обработка структурных типов                                      *");
-        Console.WriteLine("* Задание #0                                                             *");
-        Console.WriteLine("* Вариант #15                                                            *");
+        Console.WriteLine("* Задание #1                                                             *");
+        Console.WriteLine("* Вариант #8                                                            *");
         Console.WriteLine("* Выполнила: Выполнила Тихомирова К. А. | ИБКСб-25-1                     *");
         Console.WriteLine("**************************************************************************");
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                       *");
